@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muskan Waheed - Frontend Developer & Graphic Designer.">
+    <title>NEURAL | Muskan Waheed</title>
+    <!-- YEH LINE CHANGE KI GAYI HAI: Ab seedha style.css link karegi -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MW.</a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%230a0e17' width='1920' height='1080'/%3E%3C/svg%3E">
+                <source src="assets/videos/hero-background.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="neural-orb-container">
+                <div class="neural-orb">
+                    <div class="orb-core"></div>
+                    <div class="orb-ring ring-1"></div>
+                    <div class="orb-ring ring-2"></div>
+                    <div class="orb-ring ring-3"></div>
+                </div>
+            </div>
+            
+            <div class="hero-text reveal">
+                <span class="status-label">EXPLORING • BUILDING • CREATING</span>
+                <p class="hero-greeting">HELLO, I'M MUSKAN WAHEED</p>
+                <h1 class="hero-heading">Crafting Digital Experiences at the Intersection of Code & Creativity.</h1>
+                <p class="hero-subtitle">Frontend Developer | Creative Designer | Computer Science Student</p>
+                <p class="hero-intro">I build modern, responsive and user-friendly digital experiences by combining frontend development with creative visual design.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="images/profile.jpg" alt="Muskan Waheed" onerror="this.src='https://placehold.co/400x500/121826/00f0ff?text=Muskan+W.'">
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <h3>Behind the Code</h3>
+                    <p>I’m a Computer Science student at Women University Multan, passionate about building modern, responsive and user-friendly websites. I enjoy combining frontend development and creative design to transform ideas into meaningful digital experiences.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Education</span>
+                            <span class="detail-value">BS Computer Science, Women University Multan</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Focus</span>
+                            <span class="detail-value">Frontend Development & Creative Visual Design</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Current Journey</span>
+                            <span class="detail-value">Expanding into Python and advanced interactive UI patterns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title reveal">Skill Matrix</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-nodes">
+                        <span class="skill-node" data-info="Structure and semantics of modern web pages">HTML5</span>
+                        <span class="skill-node" data-info="Styling, animations, and responsive layouts">CSS3</span>
+                        <span class="skill-node" data-info="Interactive and dynamic web behavior">JavaScript</span>
+                        <span class="skill-node" data-info="Component-based UI development">React</span>
+                        <span class="skill-node" data-info="Mobile-first, adaptive design principles">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3>Creative Design</h3>
+                    <div class="skill-nodes">
+                        <span class="skill-node" data-info="Visual composition and digital aesthetics">Graphic Design</span>
+                        <span class="skill-node" data-info="Rapid prototyping and social media visuals">Canva</span>
+                        <span class="skill-node" data-info="Mobile-first graphic editing">PixelLab</span>
+                        <span class="skill-node" data-info="Engaging visual content for digital platforms">Social Media Design</span>
+                        <span class="skill-node" data-info="Brand identity and visual marks">Basic Logo Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3>Currently Learning</h3>
+                    <div class="skill-nodes">
+                        <span class="skill-node learning" data-info="Building logic, automation, and backend fundamentals">Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-tooltip" id="skill-tooltip"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">💻</div>
+                    <h3>Responsive Website Development</h3>
+                    <p>Building fluid, mobile-first websites that look and function flawlessly across all devices.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🎨</div>
+                    <h3>Frontend Website Design</h3>
+                    <p>Translating creative concepts into clean, modern, and interactive user interfaces.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🚀</div>
+                    <h3>Landing Page Development</h3>
+                    <p>High-converting, visually striking single-page experiences designed to drive action.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🔄</div>
+                    <h3>Website Redesign</h3>
+                    <p>Modernizing outdated websites with fresh aesthetics and better user experiences.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">⚙️</div>
+                    <h3>UI Implementation</h3>
+                    <p>Pixel-perfect conversion of design mockups into functional HTML/CSS/JS code.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">✨</div>
+                    <h3>Graphic & Social Media Design</h3>
+                    <p>Creating cohesive visual identities and promotional graphics that elevate your brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title reveal">Selected Works</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects injected via projects.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">How I Bring Ideas to Life</h2>
+            <div class="workflow-timeline">
+                <div class="workflow-step reveal">
+                    <div class="step-number">01</div>
+                    <h3>Discover</h3>
+                    <p>Understand the idea, target audience, and core requirements.</p>
+                </div>
+                <div class="workflow-step reveal">
+                    <div class="step-number">02</div>
+                    <h3>Design</h3>
+                    <p>Plan the visual experience, layout, and interactive interface.</p>
+                </div>
+                <div class="workflow-step reveal">
+                    <div class="step-number">03</div>
+                    <h3>Develop</h3>
+                    <p>Build responsive, clean, and interactive frontend experiences.</p>
+                </div>
+                <div class="workflow-step reveal">
+                    <div class="step-number">04</div>
+                    <h3>Refine</h3>
+                    <p>Improve usability, polish presentation, and ensure perfect responsiveness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title reveal">Have an Idea? Let's Build Something Great.</h2>
+            <div class="contact-content reveal">
+                <p class="contact-intro">I'm currently open to freelance projects, collaborations, and internship opportunities. Let's discuss how we can bring your vision to life.</p>
+                <a href="mailto:mlefty120@gmail.com" class="btn btn-primary btn-large">Let's Chat</a>
+                
+                <div class="contact-links">
+    <a href="mailto:mlefty120@gmail.com" class="contact-link">mlefty120@gmail.com</a>
+    <a href="https://www.linkedin.com/in/muskan-waheed-405512447" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+    <a href="https://github.com/mlefty120-spec" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+    <a href="https://www.instagram.com/muskan.waheed.dev?vrfl=OHZmdnQ2bGxvbjI1" target="_blank" rel="noopener noreferrer" class="contact-link">Instagram</a>
+</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">MW.</span>
+                    <p>Muskan Waheed<br>Frontend Developer & Graphic Designer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Muskan Waheed. All rights reserved.</p>
+                <p class="footer-tagline">Building with creativity. Developing with purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-content glass-panel">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery" id="modal-gallery"></div>
+                <div class="modal-info">
+                    <span class="modal-category" id="modal-category"></span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-tech" id="modal-tech"></div>
+                    <div class="modal-actions" id="modal-actions"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Portfolio Assistant -->
+    <div class="assistant-container">
+        <button class="assistant-toggle" id="assistant-toggle" aria-label="Open Portfolio Assistant">
+            <span class="assistant-icon">💬</span>
+        </button>
+        <div class="assistant-window glass-panel" id="assistant-window">
+            <div class="assistant-header">
+                <h4>Muskan's Portfolio Assistant</h4>
+                <button class="assistant-close" id="assistant-close">&times;</button>
+            </div>
+            <div class="assistant-disclaimer">I am an interactive portfolio guide, not a real AI model.</div>
+            <div class="assistant-chat" id="assistant-chat">
+                <div class="chat-message bot">Hello! I'm here to help you learn more about Muskan's skills, projects, and services. Ask me anything!</div>
+            </div>
+            <div class="assistant-questions" id="assistant-questions">
+                <button data-q="who">Who is Muskan?</button>
+                <button data-q="tech">What technologies does she use?</button>
+                <button data-q="projects">What projects has she built?</button>
+                <button data-q="services">What services does she offer?</button>
+                <button data-q="contact">How can I contact her?</button>
+                <button data-q="python">Is she currently learning Python?</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- YEH LINES CHANGE KI GAYI HAIN: Ab seedha JS files link karengi -->
+    <script src="projects.js"></script>
+    <script src="assistant.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
