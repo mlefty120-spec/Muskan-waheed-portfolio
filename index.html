@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muskan Waheed - Frontend Developer & Graphic Designer.">
+    <meta name="description" content="Muskan Waheed - Frontend Developer & Graphic Designer. Crafting digital experiences at the intersection of code and creativity.">
     <title>NEURAL | Muskan Waheed</title>
-    <!-- YEH LINE CHANGE KI GAYI HAI: Ab seedha style.css link karegi -->
+    
+    <!-- Premium Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22Space Grotesk, sans-serif%22 font-weight=%22bold%22 fill=%22%2300f0ff%22>MW</text></svg>">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Particle Background Canvas -->
+    <!-- Cinematic Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-logo">MW.</h1>
+            <div class="loader-bar-container"><div class="loader-bar"></div></div>
+            <p class="loader-text">INITIALIZING NEURAL INTERFACE...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
     <canvas id="neural-canvas"></canvas>
 
     <!-- Navigation -->
     <nav class="glass-nav" id="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">MW.</a>
-            <button class="mobile-menu-btn" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -41,7 +52,6 @@
             </video>
             <div class="video-overlay"></div>
         </div>
-        
         <div class="hero-content">
             <div class="neural-orb-container">
                 <div class="neural-orb">
@@ -51,7 +61,6 @@
                     <div class="orb-ring ring-3"></div>
                 </div>
             </div>
-            
             <div class="hero-text reveal">
                 <span class="status-label">EXPLORING • BUILDING • CREATING</span>
                 <p class="hero-greeting">HELLO, I'M MUSKAN WAHEED</p>
@@ -65,8 +74,7 @@
             </div>
         </div>
         <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-            <div class="mouse"><div class="wheel"></div></div>
-            <span>Scroll</span>
+            <div class="mouse"><div class="wheel"></div></div><span>Scroll</span>
         </a>
     </section>
 
@@ -82,20 +90,11 @@
                 </div>
                 <div class="about-content reveal">
                     <h3>Behind the Code</h3>
-                    <p>I’m a Computer Science student at Women University Multan, passionate about building modern, responsive and user-friendly websites. I enjoy combining frontend development and creative design to transform ideas into meaningful digital experiences.</p>
+                    <p>I'm a Computer Science student at Women University Multan, passionate about building modern, responsive and user-friendly websites. I enjoy combining frontend development and creative design to transform ideas into meaningful digital experiences.</p>
                     <div class="about-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Education</span>
-                            <span class="detail-value">BS Computer Science, Women University Multan</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Focus</span>
-                            <span class="detail-value">Frontend Development & Creative Visual Design</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Current Journey</span>
-                            <span class="detail-value">Expanding into Python and advanced interactive UI patterns</span>
-                        </div>
+                        <div class="detail-item"><span class="detail-label">Education</span><span class="detail-value">BS Computer Science, Women University Multan</span></div>
+                        <div class="detail-item"><span class="detail-label">Focus</span><span class="detail-value">Frontend Development & Creative Visual Design</span></div>
+                        <div class="detail-item"><span class="detail-label">Current Journey</span><span class="detail-value">Expanding into Python and advanced interactive UI patterns</span></div>
                     </div>
                 </div>
             </div>
@@ -143,36 +142,12 @@
         <div class="container">
             <h2 class="section-title reveal">Services</h2>
             <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon">💻</div>
-                    <h3>Responsive Website Development</h3>
-                    <p>Building fluid, mobile-first websites that look and function flawlessly across all devices.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🎨</div>
-                    <h3>Frontend Website Design</h3>
-                    <p>Translating creative concepts into clean, modern, and interactive user interfaces.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🚀</div>
-                    <h3>Landing Page Development</h3>
-                    <p>High-converting, visually striking single-page experiences designed to drive action.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🔄</div>
-                    <h3>Website Redesign</h3>
-                    <p>Modernizing outdated websites with fresh aesthetics and better user experiences.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">⚙️</div>
-                    <h3>UI Implementation</h3>
-                    <p>Pixel-perfect conversion of design mockups into functional HTML/CSS/JS code.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">✨</div>
-                    <h3>Graphic & Social Media Design</h3>
-                    <p>Creating cohesive visual identities and promotional graphics that elevate your brand.</p>
-                </div>
+                <div class="service-card reveal"><div class="service-icon">💻</div><h3>Responsive Website Development</h3><p>Building fluid, mobile-first websites that look and function flawlessly across all devices.</p></div>
+                <div class="service-card reveal"><div class="service-icon">🎨</div><h3>Frontend Website Design</h3><p>Translating creative concepts into clean, modern, and interactive user interfaces.</p></div>
+                <div class="service-card reveal"><div class="service-icon">🚀</div><h3>Landing Page Development</h3><p>High-converting, visually striking single-page experiences designed to drive action.</p></div>
+                <div class="service-card reveal"><div class="service-icon">🔄</div><h3>Website Redesign</h3><p>Modernizing outdated websites with fresh aesthetics and better user experiences.</p></div>
+                <div class="service-card reveal"><div class="service-icon">⚙️</div><h3>UI Implementation</h3><p>Pixel-perfect conversion of design mockups into functional HTML/CSS/JS code.</p></div>
+                <div class="service-card reveal"><div class="service-icon">✨</div><h3>Graphic & Social Media Design</h3><p>Creating cohesive visual identities and promotional graphics that elevate your brand.</p></div>
             </div>
         </div>
     </section>
@@ -181,9 +156,7 @@
     <section id="projects" class="section alt-bg">
         <div class="container">
             <h2 class="section-title reveal">Selected Works</h2>
-            <div class="projects-grid" id="projects-container">
-                <!-- Projects injected via projects.js -->
-            </div>
+            <div class="projects-grid" id="projects-container"></div>
         </div>
     </section>
 
@@ -192,26 +165,10 @@
         <div class="container">
             <h2 class="section-title reveal">How I Bring Ideas to Life</h2>
             <div class="workflow-timeline">
-                <div class="workflow-step reveal">
-                    <div class="step-number">01</div>
-                    <h3>Discover</h3>
-                    <p>Understand the idea, target audience, and core requirements.</p>
-                </div>
-                <div class="workflow-step reveal">
-                    <div class="step-number">02</div>
-                    <h3>Design</h3>
-                    <p>Plan the visual experience, layout, and interactive interface.</p>
-                </div>
-                <div class="workflow-step reveal">
-                    <div class="step-number">03</div>
-                    <h3>Develop</h3>
-                    <p>Build responsive, clean, and interactive frontend experiences.</p>
-                </div>
-                <div class="workflow-step reveal">
-                    <div class="step-number">04</div>
-                    <h3>Refine</h3>
-                    <p>Improve usability, polish presentation, and ensure perfect responsiveness.</p>
-                </div>
+                <div class="workflow-step reveal"><div class="step-number">01</div><h3>Discover</h3><p>Understand the idea, target audience, and core requirements.</p></div>
+                <div class="workflow-step reveal"><div class="step-number">02</div><h3>Design</h3><p>Plan the visual experience, layout, and interactive interface.</p></div>
+                <div class="workflow-step reveal"><div class="step-number">03</div><h3>Develop</h3><p>Build responsive, clean, and interactive frontend experiences.</p></div>
+                <div class="workflow-step reveal"><div class="step-number">04</div><h3>Refine</h3><p>Improve usability, polish presentation, and ensure perfect responsiveness.</p></div>
             </div>
         </div>
     </section>
@@ -225,11 +182,23 @@
                 <a href="mailto:mlefty120@gmail.com" class="btn btn-primary btn-large">Let's Chat</a>
                 
                 <div class="contact-links">
-    <a href="mailto:mlefty120@gmail.com" class="contact-link">mlefty120@gmail.com</a>
-    <a href="https://www.linkedin.com/in/muskan-waheed-405512447" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
-    <a href="https://github.com/mlefty120-spec" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
-    <a href="https://www.instagram.com/muskan.waheed.dev?vrfl=OHZmdnQ2bGxvbjI1" target="_blank" rel="noopener noreferrer" class="contact-link">Instagram</a>
-</div>
+                    <a href="mailto:mlefty120@gmail.com" class="contact-link">
+                        <span class="link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> Email me at mlefty120@gmail.com
+                    </a>
+                    <a href="https://wa.me/923140426892" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp-link">
+                        <span class="link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span> Chat on WhatsApp
+                    </a>
+                    <a href="https://www.linkedin.com/in/muskan-waheed-405512447" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></span> Visit my LinkedIn Profile
+                    </a>
+                    <a href="https://github.com/mlefty120-spec" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></span> View my GitHub Repositories
+                    </a>
+                    <a href="https://www.instagram.com/muskan.waheed.dev?vrfl=OHZmdnQ2bGxvbjI1" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span> Follow my Design Journey on Instagram
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -242,10 +211,7 @@
                     <p>Muskan Waheed<br>Frontend Developer & Graphic Designer</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -275,7 +241,7 @@
     <!-- AI Portfolio Assistant -->
     <div class="assistant-container">
         <button class="assistant-toggle" id="assistant-toggle" aria-label="Open Portfolio Assistant">
-            <span class="assistant-icon">💬</span>
+            <span class="assistant-icon">🤖</span>
         </button>
         <div class="assistant-window glass-panel" id="assistant-window">
             <div class="assistant-header">
@@ -297,9 +263,14 @@
         </div>
     </div>
 
+    <!-- Back to Top -->
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
 
-    <!-- YEH LINES CHANGE KI GAYI HAIN: Ab seedha JS files link karengi -->
+    <!-- Floating WhatsApp Button (Small & Professional) -->
+    <a href="https://wa.me/923140426892" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
     <script src="projects.js"></script>
     <script src="assistant.js"></script>
     <script src="script.js"></script>
